@@ -1,7 +1,6 @@
-# Getting Started with Create React App
+# Hacklytics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Hacklytics Project - Team 123
 ## Available Scripts
 
 In the project directory, you can run:

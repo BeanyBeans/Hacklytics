@@ -37,11 +37,3 @@
 .selected {
     background-color: rgb(67, 61, 61)
 }
-.stationName {
-    color: white;
-    border-bottom: 1px white solid;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 30px; 
-    margin-top: -16px;
-}

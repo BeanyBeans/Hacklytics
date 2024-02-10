@@ -6,16 +6,19 @@ import React from 'react';
 
 export default function CategoryList() {
     return (
-        <div className = 'parent'> 
-            <div className = 'child1'> 
-                <Movie />
-            </div>
-            <div className ='child2'>
-                <Random />
-            </div>
-            <div className='child3'>
-                <Music /> 
-            </div>
+        <div className="category-container">
+            <Movie />
+            <Random />
+            <Music /> 
         </div>
+        // <div className = 'parent'> 
+        //         <Movie />
+        //     <div className ='child2'>
+        //         <Random />
+        //     </div>
+        //     <div className='child3'>
+        //         <Music /> 
+        //     </div>
+        // </div>
       );
 }

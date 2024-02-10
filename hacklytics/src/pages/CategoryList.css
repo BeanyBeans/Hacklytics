@@ -1,9 +1,10 @@
-.parent {
+.category-container {
     display: flex;
-    align-items: start;
+    /* align-items: ; */
+    flex-direction: row;
     justify-content: center;
-    width: 100vw;
-    height: 200vh;
+    /* width: 100vw;
+    height: 200vh; */
 }
 
 .child1{

@@ -12,7 +12,7 @@
 .image {
   width: 35px; /* Adjust width as needed */
   height: 50px; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Add space between image and text */
+  margin-bottom: 2px; /* Add space between image and text */
   display: block;
 }
 

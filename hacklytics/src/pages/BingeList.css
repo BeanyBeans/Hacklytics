@@ -4,16 +4,18 @@
     border: none; /* Remove border */
     background-color: #E3E3E3; /* Fill color */
     width: 324px; /* Set width */
-    height: 151px; /* Set height */
+    height: 70px; /* Set height */
     border-radius: 10px;
     padding: 20px; 
     color: #747474;
     font-family: Inter;
+    margin-bottom: 40px;
 }
 
 .generate-button {
     width: 223px; /* Set width */
     height: 56px; /* Set height */
+    border: none;
     border-radius: 40px; /* Set border radius */
     background-color: #444444; /* Set background color */
     color: #FFFFFF; /* Set text color */
@@ -23,6 +25,11 @@
     line-height: 50px; /* Center text vertically */
     display: block; /* Make it a block element */
     margin: 20px auto 0; /* Center button horizontally and set margin from top */
+    padding-top: -20px;
     padding-bottom: 50px 
+}
+
+.generate-button:hover {
+    background-color: #666666; /* Change background color on hover */
   }
   

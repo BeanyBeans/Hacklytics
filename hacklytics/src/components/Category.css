@@ -6,9 +6,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 10px;
 }
+
+.container:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    border-radius: 5px
+}
+
+
 .image {
   width: 35px; /* Adjust width as needed */
   height: 50px; /* Maintain aspect ratio */

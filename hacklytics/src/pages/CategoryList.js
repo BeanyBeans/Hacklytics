@@ -8,8 +8,8 @@ export default function CategoryList() {
     return (
         <div className="category-container">
             <Movie />
-            <Random />
             <Music /> 
+            <Random />
         </div>
         // <div className = 'parent'> 
         //         <Movie />

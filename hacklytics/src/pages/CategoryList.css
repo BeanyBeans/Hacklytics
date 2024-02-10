@@ -1,3 +1,26 @@
+.parent {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 200vh;
+}
+
+.child1{
+    width: 100px;
+    height: 100px;
+}
+
+.child2{
+    width: 100px;
+    height: 100px;
+}
+
+.child3{
+    width: 100px;
+    height: 100px;
+}
+
 .nav-bar {
     background-color: black;
     margin-top: -22px;

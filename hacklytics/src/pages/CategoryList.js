@@ -1,7 +1,7 @@
 import Movie from '../components/Movie';
 import Random from '../components/Random';
 import Music from '../components/Music';
-import "../pages/CategoryList.css"
+import "./CategoryList.css"
 import React from 'react';
 
 export default function CategoryList() {

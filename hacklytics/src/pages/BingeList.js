@@ -2,6 +2,7 @@ import CategoryList from './CategoryList.js';
 import DropList from './DropList.js';
 import Generate from './Generate.js';
 import React from 'react';
+import './BingeList.css';
 import { useState } from 'react';
 
 export default function BingeList() {

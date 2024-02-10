@@ -1,7 +1,28 @@
-.recommendation-textbox {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+.recommendation-textbox {
+    border: none; /* Remove border */
+    background-color: #E3E3E3; /* Fill color */
+    width: 324px; /* Set width */
+    height: 151px; /* Set height */
+    border-radius: 10px;
+    padding: 20px; 
+    color: #747474;
+    font-family: Inter;
 }
 
 .generate-button {
-    
-}
+    width: 223px; /* Set width */
+    height: 56px; /* Set height */
+    border-radius: 40px; /* Set border radius */
+    background-color: #444444; /* Set background color */
+    color: #FFFFFF; /* Set text color */
+    font-family: Inter; /* Set font to Inter */
+    font-size: 18px; /* Set font size */
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    display: block; /* Make it a block element */
+    margin: 20px auto 0; /* Center button horizontally and set margin from top */
+    padding-bottom: 50px 
+  }
+  

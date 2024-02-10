@@ -21,19 +21,3 @@
     width: 100px;
     height: 100px;
 }
-
-.nav-bar {
-    background-color: black;
-    margin-top: -22px;
-    padding-right: 50px;
-    width: 300px;
-}
-
-.title {
-    color:rgb(121, 108, 108);
-    padding-left: 10px;
-}
-
-.selected {
-    background-color: rgb(67, 61, 61)
-}

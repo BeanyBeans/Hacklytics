@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.category-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center items vertically */
-    text-align: center;
-  }
-  
-  .category-image {
-    width: 35px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space between image and text */
-  }
-  
-  .category-name {
-    text-align: center;
-    font-family: Inter; /* Set font to Inter */
-    font-size: 14pt; /* Set font size to 18pt */
-    font-weight: normal; /* Set font weight to regular */
-    color: #343541; /* Set font color to #343541 */
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.image {
+  width: 35px; /* Adjust width as needed */
+  height: 50px; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add space between image and text */
+  display: block;
+}
+
+.name {
+  text-align: center;
+  font-family: Inter; /* Set font to Inter */
+  font-size: 14pt; /* Set font size to 18pt */
+  font-weight: normal; /* Set font weight to regular */
+  color: #343541; /* Set font color to #343541 */
+}

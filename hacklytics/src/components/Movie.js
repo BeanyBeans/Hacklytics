@@ -4,9 +4,9 @@ import { ReactComponent as MoviePic } from '../images/movie.svg'; // Importing S
 
 export default function Movie() {
     return (
-        <div className="category-container">
-            <MoviePic className="category-image" />
-            <div className="category-name">{"Movie"}</div>
+        <div className="container">
+            <MoviePic className="image" />
+            <div className="name">{"Movie"}</div>
         </div>
     );
 }

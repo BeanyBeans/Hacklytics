@@ -4,9 +4,9 @@ import { ReactComponent as RandomPic } from '../images/random.svg'; // Importing
 
 export default function Random() {
     return (
-        <div className="random">
+        <div className="category-container">
             <RandomPic className="category-image" />
-            <div className="category">{"Random"}</div>
+            <div className="category-name">{"Random"}</div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import './Category.css'; // Import CSS file for styling
+import './Card.css'; // Import CSS file for styling
+
 
 export default function Card (props) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,13 +19,14 @@ export default function Card (props) {
             {recommendations.length > 0 ? (
                 <>
                     <div className="card-content">
-                        <img src={recommendations[currentIndex].imageLink} alt={recommendations[currentIndex].title} />
+                        <img className="cardImage" src={recommendations[currentIndex].imageLink} alt={recommendations[currentIndex].title} />
+                        <h3>{recommendations[currentIndex].title}</h3>
                         {/* <img src="http://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="My Image" /> */}
                     </div>
                     <div className="card-buttons">
-                        <button onClick={handlePrevious}>Previous</button>
-                        <h3>{recommendations[currentIndex].title}</h3>
-                        <button onClick={handleNext}>Next</button>
+                        <button onClick={handlePrevious}>&lt;</button>
+                        <h3 className="card-counter">{currentIndex + 1}</h3>
+                        <button onClick={handleNext}>&gt;</button>
                     </div>
                 </>
             ) : (

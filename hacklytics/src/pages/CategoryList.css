@@ -50,9 +50,9 @@
 .name {
     text-align: center;
     font-family: Inter; /* Set font to Inter */
-    font-size: 14pt; /* Set font size to 18pt */
+    font-size: 20pt; /* Set font size to 18pt */
     font-weight: normal; /* Set font weight to regular */
-    color: #343541; /* Set font color to #343541 */
+    color: #353535; /* Set font color to #343541 */
 }
 
 .button:active{

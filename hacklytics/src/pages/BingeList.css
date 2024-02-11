@@ -29,7 +29,7 @@
     display: block; /* Make it a block element */
     margin: 20px auto 0; /* Center button horizontally and set margin from top */
     padding-top: -20px;
-    padding-bottom: 50px 
+    padding-bottom: 50px;
 }
 
 .generate-button:hover {
@@ -50,8 +50,8 @@ select {
     font-family: Inter;
     padding: 3px;
     padding-left: 15px;
-    padding-right: 10px;
     margin-top: -60px;
+    border-right: 16px solid transparent
 }
 
 select option {

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.card-content{
+    text-align: center;
+    font-family: Inter; /* Set font to Inter */
+    font-size: 12pt; /* Set font size to 18pt */
+    font-weight: light; /* Set font weight to regular */
+    color: #323232;
+}
+
+.cardImage {
+    width: 202px; 
+    height: 300px; 
+}
+
+.card-buttons {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-buttons button {
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border: none;
+    border-radius: 40px; /* Set border radius */
+    background-color: #dddddd; /* Set background color */
+    color: #2d2d2d; /* Set text color */
+    font-family: Inter; /* Set font to Inter */
+    font-size: 20px; /* Set font size */
+    text-align: center;
+    display: block; /* Make it a block element */
+    margin: 5px auto 0; /* Center button horizontally and set margin from top */
+}
+
+.card-buttons button:first-child {
+    margin-left: 608px; /* Set right margin for the first button */
+}
+
+.card-buttons button:last-child {
+    margin-right: 608px; /* Set left margin for the last button */
+}
+
+.card-counter {
+    font-family: Inter;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    color: #333333; /* Adjust text color as needed */
+    margin: 0 10px; /* Add margin to create space around the h3 element */
+    margin-top: 8px;
+}
+
+
+.card-buttons button:hover {
+    background-color: #c2c2c2;
+}

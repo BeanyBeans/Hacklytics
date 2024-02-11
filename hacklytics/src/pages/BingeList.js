@@ -5,6 +5,7 @@ import React from 'react';
 import './BingeList.css';
 import { useState, useEffect } from 'react';
 import movieCSV from '../MovieGenre.csv';
+import musicCSV from '../MusicGenre.csv';
 import Card from '../components/Card.js';
 
 export default function BingeList() {
@@ -27,7 +28,7 @@ export default function BingeList() {
             setGenre(genres[0]); // Set the initial genre to the first one in the list
         } else if (selectedOption === 'music') {
             const genres = [
-                "Classical", "Rock", "Stuff"
+                "Pop", "Rock", "EDM", "Disco", "Rap", "Hip Hop"
             ];
             setGenresList(genres);
             setGenre(genres[0]); // Set the initial genre to the first one in the list
@@ -75,6 +76,38 @@ export default function BingeList() {
         const recommendations = movies.map(movie => ({ title: movie.title, imageLink: movie.poster }));
         return recommendations
     }
+    function parseMusicsCSV(csvData, genre) {
+        // Split the CSV data into lines
+        const lines = csvData.split('\n');
+        // Remove the header line
+        const header = lines.shift();
+        // Define a helper function to parse a CSV line into an object
+        function parseLine(line) {
+            const [title, artist, poster, popularity, genre] = line.split(',');
+            if (genre == null) {
+                genre = "null";
+            }
+            return {
+                title: title.trim(),
+                artist: artist.trim(),
+                poster: poster.trim(),
+                popularity: parseFloat(popularity.trim()),
+                genre: genre.trim().split(','), 
+            };
+        }
+        // Parse each line and filter by genre
+        
+        const musics = lines.map(parseLine).filter(music => music.genre.includes(genre.toLowerCase()));
+        
+        // Sort the movies by IMDb score
+        musics.sort((a, b) => b.popularity - a.popularity);
+        // Extract titles and return
+        // const titles = movies.map(movie => movie.title);
+        // return titles;
+        // Extract title and image url and return 
+        const recommendations = musics.map(music => ({ title: music.title, imageLink: music.poster }));
+        return recommendations
+    }
 
     const handleGenerateRecommendation = () => {
         if (selectedOption === 'movies') {
@@ -102,6 +135,13 @@ export default function BingeList() {
             //     // If no movies are available for the selected genre, show a message
             //     setRecommendation('No movies found for the selected genre');
             // }
+        } else if (selectedOption === 'music') {
+            fetch(musicCSV)
+                .then(r => r.text())
+                .then(csvData => {
+                    const recommendations = parseMusicsCSV(csvData, genre);
+                    setRecommendation(recommendations);
+                });
         } else {
             // For other options (e.g., 'music', 'random'), update recommendation accordingly
             setRecommendation(`Generating recommendation for ${selectedOption}`);

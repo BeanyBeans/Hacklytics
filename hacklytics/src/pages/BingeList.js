@@ -11,7 +11,7 @@ export default function BingeList() {
     const [selectedOption, setSelectedOption] = useState(null);
     const [genre, setGenre] = useState('Genre');
     const [mood, setMood] = useState('Mood');
-    const [recommendation, setRecommendation] = useState('Your recommendation here');
+    const [recommendation, setRecommendation] = useState([]);
     const [genresList, setGenresList] = useState([]);
 
     useEffect(() => {
@@ -33,7 +33,7 @@ export default function BingeList() {
             setGenre(genres[0]); // Set the initial genre to the first one in the list
         } else if (selectedOption === 'random') {
             const genres = [
-                "RickRoll"
+                "Mystery"
             ];
             setGenresList(genres);
             setGenre(genres[0]); // Set the initial genre to the first one in the list

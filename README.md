@@ -16,10 +16,10 @@ Our project was built using a combination of Node.js, React.js, and web developm
 ## **Challenges we ran into:**
 One of the main challenges was handling and preprocessing large datasets, as well as fine-tuning the machine learning algorithms to accurately predict user preferences while balancing model complexity and performance. 
 
-##**Accomplishments We're Proud Of:**
+## **Accomplishments We're Proud Of:**
 Creating a clean and intuitive web interface 
 Leveraging Kaggle datasets and machine learning techniques to enhance user experience by generating tailored entertainment suggestions.
 
-##**What's Next for Us:**
+## **What's Next for Us:**
 Enhancing the recommendation system by incorporating additional features such as collaborative filtering and content-based filtering to further improve recommendation accuracy.
 Expanding the scope of our project to include recommendations for other forms of entertainment such as books, TV shows, and podcasts.

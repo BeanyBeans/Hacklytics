@@ -13,11 +13,14 @@
     margin-top: 90px;
 }
 
-
+.miniHeader{
+    font-family: Inter;
+    font-size: 11px;
+}
 
 .generate-button {
-    width: 223px; /* Set width */
-    height: 56px; /* Set height */
+    width: 170px; /* Set width */
+    height: 4px; /* Set height */
     border: none;
     border-radius: 40px; /* Set border radius */
     background-color: #444444; /* Set background color */
@@ -28,7 +31,7 @@
     line-height: 50px; /* Center text vertically */
     display: block; /* Make it a block element */
     margin: 20px auto 0; /* Center button horizontally and set margin from top */
-    padding-top: -20px;
+    padding-top: -10px;
     padding-bottom: 50px;
 }
 
@@ -39,14 +42,14 @@
 select {
     margin: 0 auto; /* Center the select dropdown horizontally */
     display: block;
-    width: 120px; /* Set width */
-    height: 40px;
+    width: 160px; /* Set width */
+    height: 33px;
     border: none;
     border-radius: 22px;
     border: none;
-    background: #444444;
-    font-size: 15px;
-    color: white;
+    background: #d6d6d6;
+    font-size: 12px;
+    color: rgb(40, 40, 40);
     font-family: Inter;
     padding: 3px;
     padding-left: 15px;
@@ -62,6 +65,6 @@ select option {
 }
 
 select:hover {
-    background-color: #666666; 
+    background-color: #c1c0c0; 
 }
   

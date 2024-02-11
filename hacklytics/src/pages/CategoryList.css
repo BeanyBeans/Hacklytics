@@ -13,9 +13,10 @@
 }
 
 .header{
-    margin-top:90px;
+    margin-top: 50px;
     font-family: Inter;
     font-weight: 700;
+    margin-bottom: -30px;
 }
 
 .miniHeader {

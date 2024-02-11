@@ -1,5 +1,8 @@
 # **BingeNite**
 
+Don’t know what to watch? Need new songs to listen to? Based on your mood and preferred genre, our project will predict the perfect new movie/song for you
+
+
 ## **What it does: Mood-based Movie and Song Recommender**
 
 The main purpose of BingeNite is to generate customized lists of entertainment media based on the user's mood and desired genre. Our website implements multiple datasets obtained from the Kaggle database website. To parse data from datasets, we used optimized Javascript algorithms and filtered the dataset based on user preferences. After obtaining a customized list of media for the user, we’ll be displaying contents using React.js and CSS styling.

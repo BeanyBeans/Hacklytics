@@ -19,6 +19,7 @@ export default function Card (props) {
                 <>
                     <div className="card-content">
                         <img src={recommendations[currentIndex].imageLink} alt={recommendations[currentIndex].title} />
+                        {/* <img src="http://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="My Image" /> */}
                     </div>
                     <div className="card-buttons">
                         <button onClick={handlePrevious}>Previous</button>

@@ -61,7 +61,7 @@ export default function BingeList() {
                 title: title.trim(),
                 imdbScore: parseFloat(imdbScore.trim()),
                 genre: genreList.trim().split('|'),
-                poster: poster.trim(),
+                poster: poster.trim().substr(1),
             };
         }
         // Parse each line and filter by genre
@@ -69,8 +69,11 @@ export default function BingeList() {
         // Sort the movies by IMDb score
         movies.sort((a, b) => b.imdbScore - a.imdbScore);
         // Extract titles and return
-        const titles = movies.map(movie => movie.title);
-        return titles;
+        // const titles = movies.map(movie => movie.title);
+        // return titles;
+        // Extract title and image url and return 
+        const recommendations = movies.map(movie => ({ title: movie.title, imageLink: movie.poster }));
+        return recommendations
     }
 
     const handleGenerateRecommendation = () => {
@@ -78,9 +81,13 @@ export default function BingeList() {
             fetch(movieCSV)
                 .then(r => r.text())
                 .then(csvData => {
-                    const movieTitles = parseMoviesCSV(csvData, genre);
-                    setRecommendation(`Recommended movie: ${movieTitles}`);
+                    const recommendations = parseMoviesCSV(csvData, genre);
+                    setRecommendation(recommendations);
                 });
+                // .then(csvData => {
+                //     const movieTitles = parseMoviesCSV(csvData, genre);
+                //     setRecommendation(`Recommended movie: ${movieTitles}`);
+                // });
             // const movieTitles = parseMoviesCSV(csvData, genre);
             // setRecommendation(`Recommended movie: ${movieTitles}`);
             // Check if there are movies available for the selected genre

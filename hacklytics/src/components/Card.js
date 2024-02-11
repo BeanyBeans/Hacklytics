@@ -1,11 +1,14 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Card.css'; // Import CSS file for styling
 
 
 export default function Card (props) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const { recommendations } = props; // recommendation is an array of 
+    const { recommendations } = props; // recommendation is an array o
+    useEffect(() => {
+        setCurrentIndex(0);
+    }, [recommendations]);
     const handlePrevious = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? recommendations.length - 1 : prevIndex - 1));
     };

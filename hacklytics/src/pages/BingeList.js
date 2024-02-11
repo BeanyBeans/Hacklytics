@@ -155,7 +155,7 @@ export default function BingeList() {
 
     return (
         <div>
-            <h1 className="header">BingeList</h1>
+            <h1 className="header">BingeNite</h1>
             <CategoryList handleOptionSelect={handleOptionSelect}/> 
             <div className="miniHeader">Select category to start</div>
             <select value={genre} onChange={(e) => setGenre(e.target.value)}>

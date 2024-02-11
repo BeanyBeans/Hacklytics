@@ -5,6 +5,7 @@ import React from 'react';
 import './BingeList.css';
 import { useState, useEffect } from 'react';
 import movieCSV from '../MovieGenre.csv';
+import Card from '../components/Card.js';
 
 export default function BingeList() {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -118,6 +119,7 @@ export default function BingeList() {
             </select>
             {/* <DropList /> */}
             <textarea className="recommendation-textbox" value={recommendation} readOnly />
+            <Card className="card" recommendations={recommendation} readOnly />
             <button className="generate-button" onClick={handleGenerateRecommendation}>Generate</button>
         </div>
       );

@@ -34,7 +34,7 @@ export default function Card (props) {
                     </div>
                 </>
             ) : (
-                <p>No recommendations available</p>
+                <p className="noRecommendation">No recommendations available</p>
             )}
         </div>
     );

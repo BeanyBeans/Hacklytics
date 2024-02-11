@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
+.card {
+    margin-top: 50px;
+}
 .card-content{
     text-align: center;
     font-family: Inter; /* Set font to Inter */
@@ -10,8 +12,9 @@
 }
 
 .cardImage {
-    width: 202px; 
-    height: 300px; 
+    width: 202px;
+    height: auto; 
+    /* height: 300px;  */
 }
 
 .card-buttons {
@@ -32,7 +35,10 @@
     font-size: 20px; /* Set font size */
     text-align: center;
     display: block; /* Make it a block element */
-    margin: 5px auto 0; /* Center button horizontally and set margin from top */
+    margin-left: 35px;
+    margin-right: 35px;
+
+    /* margin: 5px auto 0; Center button horizontally and set margin from top */
 }
 
 .card-buttons button:first-child {
@@ -55,4 +61,8 @@
 
 .card-buttons button:hover {
     background-color: #c2c2c2;
+}
+
+.noRecommendation {
+    margin-top: 50px;
 }

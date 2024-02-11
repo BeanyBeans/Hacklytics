@@ -168,9 +168,9 @@ export default function BingeList() {
                 )}
             </select>
             {/* <DropList /> */}
-            <Card className="card" recommendations={recommendation} readOnly />
             <button className="generate-button" onClick={handleGenerateRecommendation} >Generate</button>
-            <textarea className="recommendation-textbox" value={recommendation} readOnly />
+            <Card className="card" recommendations={recommendation} readOnly />
+            {/* <textarea className="recommendation-textbox" value={recommendation} readOnly /> */}
         </div>
       );
 }

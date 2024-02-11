@@ -8,8 +8,8 @@
     justify-content: center;
     /* width: 100vw;
     height: 200vh; */
-    margin-top: 70px;
-    margin-bottom: 90px;
+    margin-top: 35px;
+    margin-bottom: 80px;
 }
 
 .header{
@@ -26,10 +26,11 @@
     text-align: center;
     margin-left: 90px;
     margin-right: 90px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border: none;
     border-radius: 5px;
+    font-family: Inter;
 }
   
 .button:hover {
@@ -51,3 +52,11 @@
     font-weight: normal; /* Set font weight to regular */
     color: #343541; /* Set font color to #343541 */
 }
+
+.button:active{
+    background-color: #dedede;
+}
+
+.selected {
+    background-color: #f0f0f0; /* Slightly darker color than white */
+  }

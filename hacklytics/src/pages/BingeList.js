@@ -142,6 +142,8 @@ export default function BingeList() {
                     const recommendations = parseMusicsCSV(csvData, genre);
                     setRecommendation(recommendations);
                 });
+        } else if (selectedOption === 'random') {
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
         } else {
             // For other options (e.g., 'music', 'random'), update recommendation accordingly
             setRecommendation(`Generating recommendation for ${selectedOption}`);
@@ -166,9 +168,9 @@ export default function BingeList() {
                 )}
             </select>
             {/* <DropList /> */}
-            <textarea className="recommendation-textbox" value={recommendation} readOnly />
             <Card className="card" recommendations={recommendation} readOnly />
-            <button className="generate-button" onClick={handleGenerateRecommendation}>Generate</button>
+            <button className="generate-button" onClick={handleGenerateRecommendation} >Generate</button>
+            <textarea className="recommendation-textbox" value={recommendation} readOnly />
         </div>
       );
 }

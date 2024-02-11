@@ -19,6 +19,7 @@ export default function Card (props) {
 
     return (
         <div className="card">
+            {/* {recommendations.length > 0 ? ( */}
             {recommendations.length > 0 ? (
                 <>
                     <div className="card-content">

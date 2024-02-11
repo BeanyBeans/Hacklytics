@@ -39,7 +39,7 @@
 select {
     margin: 0 auto; /* Center the select dropdown horizontally */
     display: block;
-    width: 150px; /* Set width */
+    width: 120px; /* Set width */
     height: 40px;
     border: none;
     border-radius: 22px;
@@ -56,12 +56,12 @@ select {
 
 select option {
     padding: 1rem;
-    border-radius: 5rem;
     background: rgb(255, 255, 255);
     font-size: .5rem;
+    border-radius: 5px;
 }
 
 select:hover {
-    background-color: #666666; /* Change background color on hover */
+    background-color: #666666; 
 }
   

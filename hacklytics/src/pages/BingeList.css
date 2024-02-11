@@ -3,14 +3,17 @@
 .recommendation-textbox {
     border: none; /* Remove border */
     background-color: #E3E3E3; /* Fill color */
-    width: 324px; /* Set width */
+    width: 400px; /* Set width */
     height: 70px; /* Set height */
     border-radius: 10px;
     padding: 20px; 
     color: #747474;
     font-family: Inter;
     margin-bottom: 40px;
+    margin-top: 90px;
 }
+
+
 
 .generate-button {
     width: 223px; /* Set width */
@@ -31,5 +34,34 @@
 
 .generate-button:hover {
     background-color: #666666; /* Change background color on hover */
-  }
+}
+
+select {
+    margin: 0 auto; /* Center the select dropdown horizontally */
+    display: block;
+    width: 150px; /* Set width */
+    height: 40px;
+    border: none;
+    border-radius: 22px;
+    border: none;
+    background: #444444;
+    font-size: 15px;
+    color: white;
+    font-family: Inter;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin-top: -60px;
+}
+
+select option {
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgb(255, 255, 255);
+    font-size: .5rem;
+}
+
+select:hover {
+    background-color: #666666; /* Change background color on hover */
+}
   

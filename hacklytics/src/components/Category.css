@@ -6,21 +6,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 60px;
+  margin-right: 60px;
   padding: 10px;
-}
-
-.container:hover {
-    background-color: #f0f0f0; /* Change background color on hover */
-    border-radius: 5px
 }
 
 
 .image {
   width: 35px; /* Adjust width as needed */
   height: 50px; /* Maintain aspect ratio */
-  margin-bottom: 2px; /* Add space between image and text */
+  margin-bottom: -2px; /* Add space between image and text */
   display: block;
 }
 

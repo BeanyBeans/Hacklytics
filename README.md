@@ -1,5 +1,3 @@
-# Hacklytics
-
 # **BingeNite**
 
 ## **What it does: Mood-based Movie and Song Recommender**
